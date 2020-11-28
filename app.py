@@ -8,7 +8,7 @@ app = Flask(__name__)
 #home root
 @app.route('/')
 def homepage():
-    return "Welcome"
+    return render_template('index.html')
 
 # get all media types sold by store
 @app.route('/playlist')
