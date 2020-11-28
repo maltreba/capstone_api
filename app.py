@@ -27,7 +27,7 @@ def topbuyer(country, sel_year):
     GROUP by c.CustomerId 
     '''
     data=pd.read_sql_query(querytop,conn)
-    condition1=data['Year']==sel_year
+    condition1=data['Year']==str(sel_year)
     condition2=data['Country']==country
     data=data[condition1&condition2]
     return data.to_json()
