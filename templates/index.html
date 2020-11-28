@@ -1,0 +1,43 @@
+<p style="font-weight: 400;"><strong>Brief Explanation</strong></p>
+<p style="font-weight: 400;">This is API is one of&nbsp;&nbsp;Algoritma's Python for Data Analysis Capstone Project. This project aims to create a simple API to fetch data from Heroku Server. It provides Chinook Store&rsquo;s data consolidated from worldwide stores. This API granted data to be accessed by public for education purpose only.</p>
+<p style="font-weight: 400;">Runs on python platform by using certain packages such as pandas and flask which also supported by SQLite database engine.</p>
+<p style="font-weight: 400;"><strong>Dependencies</strong></p>
+<ul style="font-weight: 400;">
+<li>Pandas</li>
+<li>Flask</li>
+<li>Gunicorn</li>
+<li>Requests</li>
+<li>Sqlite3</li>
+</ul>
+<p style="font-weight: 400;">&nbsp;</p>
+<p style="font-weight: 400;"><strong>Dependencies</strong></p>
+<p style="font-weight: 400;">I&nbsp;have&nbsp;deployed&nbsp;a&nbsp;simple&nbsp;example&nbsp;on&nbsp;:&nbsp;<u><a href="https://maltreba-api.herokuapp.com">https://maltreba-api.herokuapp.com</a></u>&nbsp;Here's&nbsp;the&nbsp;list&nbsp;of&nbsp;its&nbsp;endpoints:</p>
+<ol>
+<li>/ ,method= GET</li>
+</ol>
+<p style="font-weight: 400; padding-left: 40px;">Base Endpoint, returning welcoming template page. e.g.&nbsp;&nbsp;<a href="https://maltreba-api.herokuapp.com/">https://maltreba-api.herokuapp.com/</a></p>
+<p style="font-weight: 400;">&nbsp;</p>
+<ol start="2">
+<li style="font-weight: 400;">/playlist,method&nbsp;= GET</li>
+</ol>
+<p style="font-weight: 400; padding-left: 40px;">Return full playlist table in JSON format which provide all playlist provided by Chinook Store. e.g.&nbsp;<a href="https://maltreba-api.herokuapp.com/playlist">https://maltreba-api.herokuapp.com/playlist</a></p>
+<p style="font-weight: 400;">&nbsp;&nbsp;&nbsp;</p>
+<ol start="3">
+<li style="font-weight: 400;">/customer/&lt;Country&gt;/&lt;sel_year&gt;,method= GET</li>
+</ol>
+<p style="font-weight: 400; padding-left: 40px;">Return all customers based on selected Country and Year then sorted descending by their total spending. Please notice that all country must use capital letter for each word, except United States of America please use USA. e.g.&nbsp;<a href="https://maltreba-api.herokuapp.com/customer/USA/2009">https://maltreba-api.herokuapp.com/customer/USA/2009</a></p>
+<p style="font-weight: 400;">&nbsp;</p>
+<ol start="4">
+<li style="font-weight: 400;">/product/&lt;Genre_name&gt;/track,method= GET</li>
+</ol>
+<p style="font-weight: 400; padding-left: 40px;">Return all tracks based on selected Genre. Please use capital letter for first word such as Jazz, Blues etc. e.g.&nbsp;<a href="https://maltreba-api.herokuapp.com/product/Pop/track">https://maltreba-api.herokuapp.com/product/Pop/track</a></p>
+<p style="font-weight: 400;">&nbsp;</p>
+<ol start="5">
+<li style="font-weight: 400;">/sales/Genre/&lt;sel_year&gt;,method= GET</li>
+</ol>
+<p style="font-weight: 400; padding-left: 40px;">Return number of tracks sold and their dollar amounts on selected year and group by track&rsquo;s genre. e.g.&nbsp;<a href="https://maltreba-api.herokuapp.com/sales/genre/2010">https://maltreba-api.herokuapp.com/sales/genre/2010</a></p>
+<p style="font-weight: 400;">&nbsp;</p>
+<ol start="6">
+<li style="font-weight: 400;">/sales/&lt;sel_year&gt;,method= GET</li>
+</ol>
+<p style="font-weight: 400; padding-left: 40px;">Return total sales for each genre and month for selected year. e.g.&nbsp;<a href="https://maltreba-api.herokuapp.com/sales/2010">https://maltreba-api.herokuapp.com/sales/2010</a></p>
