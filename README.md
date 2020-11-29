@@ -24,7 +24,7 @@ I have deployed a simple example on : https://maltreba-api.herokuapp.com Here's 
 
     Return full playlist table in JSON format which provide all playlist provided by Chinook Store. e.g. https://maltreba-api.herokuapp.com/playlist
     
-3. **/customer/<Country/<sel_year>**, method = GET
+3. **/customer/< Country>/<sel_year>**, method = GET
     
     Return all customers based on selected Country and Year then sorted descending by their total spending. Please notice that all country must use capital letter for each word, except United States of America please use USA. e.g. https://maltreba-api.herokuapp.com/customer/USA/2009
 
